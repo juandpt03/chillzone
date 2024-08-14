@@ -74,9 +74,9 @@ final appRouter = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              path: MusicView.routeName,
-              builder: (context, state) => const MusicView(),
-              name: MusicView.routeName,
+              path: MeditateView.routeName,
+              builder: (context, state) => const MeditateView(),
+              name: MeditateView.routeName,
             ),
           ],
         ),

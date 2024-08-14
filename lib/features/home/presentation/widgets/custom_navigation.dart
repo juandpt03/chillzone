@@ -40,8 +40,8 @@ class CustomNavigation extends StatelessWidget {
             label: 'Exercise',
           ),
           CustomNavigationRailDestination(
-            icon: Icons.music_note,
-            label: 'Music',
+            icon: Icons.self_improvement,
+            label: 'Meditate',
           ),
           CustomNavigationRailDestination(
             icon: Icons.settings,

@@ -15,13 +15,11 @@ class HomeScreen extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           imageManager.getSvgImage(imageManager.nightBackground),
-          Container(
-            color: Colors.black.withOpacity(0.7),
-          ),
+          Container(color: Colors.black.withOpacity(0.7)),
           Row(
             children: [
               CustomNavigation(navigationShell: navigationShell),
-              Expanded(child: navigationShell)
+              Expanded(child: navigationShell),
             ],
           ),
         ],

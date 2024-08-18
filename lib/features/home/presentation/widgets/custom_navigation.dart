@@ -16,10 +16,6 @@ class CustomNavigation extends StatelessWidget {
         labelType: LabelType.selected,
         destinations: const [
           CustomNavigationRailDestination(
-            icon: Icons.track_changes,
-            label: 'Sleep Tracker',
-          ),
-          CustomNavigationRailDestination(
             icon: Icons.nightlight,
             label: 'Sleep',
           ),
@@ -29,11 +25,7 @@ class CustomNavigation extends StatelessWidget {
           ),
           CustomNavigationRailDestination(
             icon: Icons.book,
-            label: 'Study',
-          ),
-          CustomNavigationRailDestination(
-            icon: Icons.cookie,
-            label: 'Cook',
+            label: 'Read',
           ),
           CustomNavigationRailDestination(
             icon: Icons.sports_gymnastics,
@@ -42,6 +34,10 @@ class CustomNavigation extends StatelessWidget {
           CustomNavigationRailDestination(
             icon: Icons.self_improvement,
             label: 'Meditate',
+          ),
+          CustomNavigationRailDestination(
+            icon: Icons.track_changes,
+            label: 'Sleep Tracker',
           ),
           CustomNavigationRailDestination(
             icon: Icons.settings,

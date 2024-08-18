@@ -1,3 +1,5 @@
+import 'package:chillzone/features/home/models/audio_track.dart';
+import 'package:chillzone/features/home/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class MeditateView extends StatelessWidget {
@@ -8,7 +10,12 @@ class MeditateView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Meditate'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Phrase(genre: AudioGenre.meditate),
+          ],
+        ),
       ),
     );
   }

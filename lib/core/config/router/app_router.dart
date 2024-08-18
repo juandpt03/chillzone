@@ -7,7 +7,7 @@ final _rootNavigatorKey = GlobalKey<NavigatorState>();
 
 final _sectionANavigatorKey = GlobalKey<NavigatorState>();
 final appRouter = GoRouter(
-  initialLocation: SleepTrackerView.routeName,
+  initialLocation: SleepView.route,
   navigatorKey: _rootNavigatorKey,
   routes: [
     StatefulShellRoute.indexedStack(
@@ -18,15 +18,6 @@ final appRouter = GoRouter(
       branches: [
         StatefulShellBranch(
           navigatorKey: _sectionANavigatorKey,
-          routes: [
-            GoRoute(
-              path: SleepTrackerView.routeName,
-              builder: (context, state) => const SleepTrackerView(),
-              name: SleepTrackerView.routeName,
-            )
-          ],
-        ),
-        StatefulShellBranch(
           routes: [
             GoRoute(
               path: SleepView.route,
@@ -47,18 +38,9 @@ final appRouter = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              path: StudyView.routeName,
-              builder: (context, state) => const StudyView(),
-              name: StudyView.routeName,
-            ),
-          ],
-        ),
-        StatefulShellBranch(
-          routes: [
-            GoRoute(
-              path: CookView.routeName,
-              builder: (context, state) => const CookView(),
-              name: CookView.routeName,
+              path: ReadView.routeName,
+              builder: (context, state) => const ReadView(),
+              name: ReadView.routeName,
             ),
           ],
         ),
@@ -78,6 +60,15 @@ final appRouter = GoRouter(
               builder: (context, state) => const MeditateView(),
               name: MeditateView.routeName,
             ),
+          ],
+        ),
+        StatefulShellBranch(
+          routes: [
+            GoRoute(
+              path: SleepTrackerView.routeName,
+              builder: (context, state) => const SleepTrackerView(),
+              name: SleepTrackerView.routeName,
+            )
           ],
         ),
         StatefulShellBranch(

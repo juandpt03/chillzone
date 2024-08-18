@@ -1,0 +1,88 @@
+{
+  "music": [
+    {
+      "title": "Nirvikalpa",
+      "composer": "Ashot-Danielyan",
+      "genre": "Meditate",
+      "path": "assets/music/1.mp3"
+    },
+    {
+      "title": "Weightlessness",
+      "composer": "SergeQuadrado",
+      "genre": "Meditate",
+      "path": "assets/music/2.mp3"
+    },
+    {
+      "title": "Majestic Sky -Healing meditative cello and piano",
+      "composer": "HarumachiMusic",
+      "genre": "Meditate",
+      "path": "assets/music/3.mp3"
+    },
+    {
+      "title": "TwinFish - Meditation 3 | Scorpio Rising",
+      "composer": "TwinFishAudio",
+      "genre": "Meditate",
+      "path": "assets/music/4.mp3"
+    },
+    {
+      "title": "Meditation Sounds",
+      "composer": "RelaxingTime",
+      "genre": "Meditate",
+      "path": "assets/music/5.mp3"
+    },
+    {
+      "title": "Meditative Documentary Atmosphere With Soft Pianos",
+      "composer": "UNIVERSFIELD",
+      "genre": "Meditate",
+      "path": "assets/music/6.mp3"
+    },
+    {
+      "title": "Waves",
+      "composer": "LightningTraveler",
+      "genre": "Meditate",
+      "path": "assets/music/7.mp3"
+    },
+    {
+      "title": "Electronic Ambient music for relaxation and meditation",
+      "composer": "Amurich",
+      "genre": "Meditate",
+      "path": "assets/music/8.mp3"
+    },
+    {
+      "title": "Musique Libre de Droit Pour La Méditation",
+      "composer": "NourishedByMusic",
+      "genre": "Meditate",
+      "path": "assets/music/9.mp3"
+    },
+    {
+      "title": "Vedic Meditations",
+      "composer": "Tim_Kulig_Free_Music",
+      "genre": "Meditate",
+      "path": "assets/music/10.mp3"
+    },
+    {
+      "title": "Paul Pitman - Moonlight Sonata Op. 27 No. 2 - III. Presto",
+      "composer": "Ludwig van Beethoven",
+      "genre": "Work",
+      "path": "assets/music/1.mp3"
+    },
+    {
+      "title": "Nocturne in B flat minor, Op. 9 no. 1",
+      "composer": "Frédéric Chopin",
+      "genre": "Sleep",
+      "path": "assets/music/7.mp3"
+    },
+    {
+      "title": "Study and Relax",
+      "composer": "Kevin MacLeod",
+      "genre": "Read",
+      "path": "assets/music/14.mp3"
+    },
+    {
+      "title": "Radiant Gift",
+      "composer": "Nolan Čapek",
+      "genre": "Exercise",
+      "path": "assets/23.mp3"
+    }
+  ]
+}

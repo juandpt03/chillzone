@@ -36,28 +36,37 @@ class CustomNavigationRail extends StatelessWidget {
             child: Column(
               children: [
                 AnimatedContainer(
-                  duration: const Duration(milliseconds: 300),
+                  duration: const Duration(milliseconds: 500),
                   curve: Curves.easeInOut,
-                  width: iconSize + 10,
-                  height: iconSize + 10,
+                  width: isSelected ? iconSize + 20 : iconSize + 10,
+                  height: isSelected ? iconSize + 20 : iconSize + 10,
                   decoration: BoxDecoration(
-                    color: isSelected ? colors.onSurface : Colors.transparent,
+                    color: isSelected
+                        ? colors.primary.withOpacity(0.2)
+                        : Colors.transparent,
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Icon(
                     destination.icon,
                     size: iconSize,
                     color: isSelected
-                        ? colors.surface
+                        ? colors.primary
                         : colors.onSurface.withOpacity(0.8),
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 if (labelType == LabelType.all || isSelected)
                   Text(
                     destination.label,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: isSelected
+                          ? colors.primary
+                          : colors.onSurface.withOpacity(0.8),
+                      fontWeight:
+                          isSelected ? FontWeight.bold : FontWeight.normal,
+                    ),
                   ),
               ],
             ),

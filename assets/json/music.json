@@ -4,85 +4,601 @@
       "title": "Nirvikalpa",
       "composer": "Ashot-Danielyan",
       "genre": "Meditate",
-      "path": "assets/music/1.mp3"
+      "filePath": "assets/music/meditate/1.mp3"
     },
     {
       "title": "Weightlessness",
       "composer": "SergeQuadrado",
       "genre": "Meditate",
-      "path": "assets/music/2.mp3"
+      "filePath": "assets/music/meditate/2.mp3"
     },
     {
       "title": "Majestic Sky -Healing meditative cello and piano",
       "composer": "HarumachiMusic",
       "genre": "Meditate",
-      "path": "assets/music/3.mp3"
+      "filePath": "assets/music/meditate/3.mp3"
     },
     {
       "title": "TwinFish - Meditation 3 | Scorpio Rising",
       "composer": "TwinFishAudio",
       "genre": "Meditate",
-      "path": "assets/music/4.mp3"
+      "filePath": "assets/music/meditate/4.mp3"
     },
     {
       "title": "Meditation Sounds",
       "composer": "RelaxingTime",
       "genre": "Meditate",
-      "path": "assets/music/5.mp3"
+      "filePath": "assets/music/meditate/5.mp3"
     },
     {
       "title": "Meditative Documentary Atmosphere With Soft Pianos",
       "composer": "UNIVERSFIELD",
       "genre": "Meditate",
-      "path": "assets/music/6.mp3"
+      "filePath": "assets/music/meditate/6.mp3"
     },
     {
       "title": "Waves",
       "composer": "LightningTraveler",
       "genre": "Meditate",
-      "path": "assets/music/7.mp3"
+      "filePath": "assets/music/meditate/7.mp3"
     },
     {
       "title": "Electronic Ambient music for relaxation and meditation",
       "composer": "Amurich",
       "genre": "Meditate",
-      "path": "assets/music/8.mp3"
+      "filePath": "assets/music/meditate/8.mp3"
     },
     {
       "title": "Musique Libre de Droit Pour La Méditation",
       "composer": "NourishedByMusic",
       "genre": "Meditate",
-      "path": "assets/music/9.mp3"
+      "filePath": "assets/music/meditate/9.mp3"
     },
     {
       "title": "Vedic Meditations",
       "composer": "Tim_Kulig_Free_Music",
       "genre": "Meditate",
-      "path": "assets/music/10.mp3"
+      "filePath": "assets/music/meditate/10.mp3"
     },
     {
-      "title": "Paul Pitman - Moonlight Sonata Op. 27 No. 2 - III. Presto",
-      "composer": "Ludwig van Beethoven",
+      "title": "New Age Peaceful Spa Meditation Calm Yoga Spiritual Music",
+      "composer": "REDproductions",
+      "genre": "Meditate",
+      "filePath": "assets/music/meditate/11.mp3"
+    },
+    {
+      "title": "Solitude Meditation",
+      "composer": "NaturesEye",
+      "genre": "Meditate",
+      "filePath": "assets/music/meditate/12.mp3"
+    },
+    {
+      "title": "A Meditations",
+      "composer": "35433346",
+      "genre": "Meditate",
+      "filePath": "assets/music/meditate/13.mp3"
+    }, 
+    {
+      "title": "Transcendental Meditation",
+      "composer": "HigherUniversalMan",
+      "genre": "Meditate",
+      "filePath": "assets/music/meditate/14.mp3"
+    }, 
+    {
+      "title": "Reiki meditation - Patrizio Yoga -Olistik Sound Project -2022",
+      "composer": "PatrizioYoga",
+      "genre": "Meditate",
+      "filePath": "assets/music/meditate/15.mp3"
+    }, 
+    {
+      "title": "Full moon deep relaxation meditation yoga zen positive sleep music",
+      "composer": "AlanFrijns",
+      "genre": "Meditate",
+      "filePath": "assets/music/meditate/16.mp3"
+    },
+    {
+      "title": "Aberdeen meditative ambient soundscape for learning and relaxing",
+      "composer": "AlanFrijns",
+      "genre": "Meditate",
+      "filePath": "assets/music/meditate/17.mp3"
+    }, 
+    {
+      "title": "Foetal Meditation for Sleep & Relaxation",
+      "composer": "NaturesEye",
+      "genre": "Meditate",
+      "filePath": "assets/music/meditate/18.mp3"
+    }, 
+    {
+      "title": "Inner Peace Meditation",
+      "composer": "NaturesEye",
+      "genre": "Meditate",
+      "filePath": "assets/music/meditate/19.mp3"
+    }, 
+    {
+      "title": "Meditation at the river yoga zen relaxation positive sleep music",
+      "composer": "AlanFrijns",
+      "genre": "Meditate",
+      "filePath": "assets/music/meditate/20.mp3"
+    },
+    {
+      "title": "Mountain filePath",
+      "composer": "Magnetic_Trailer",
       "genre": "Work",
-      "path": "assets/music/1.mp3"
+      "filePath": "assets/music/work/1.mp3"
     },
     {
-      "title": "Nocturne in B flat minor, Op. 9 no. 1",
-      "composer": "Frédéric Chopin",
+      "title": "Uneven",
+      "composer": "ComaStudio",
+      "genre": "Work",
+      "filePath": "assets/music/work/2.mp3"
+    },
+    {
+      "title": "Piano Ambience Relax",
+      "composer": "Coma-Media",
+      "genre": "Work",
+      "filePath": "assets/music/work/3.mp3"
+    },
+    {
+      "title": "Upbeat Soulful Background-Intro Music",
+      "composer": "Brotheration_Records",
+      "genre": "Work",
+      "filePath": "assets/music/work/4.mp3"
+    },
+    {
+      "title": "Atmospheric",
+      "composer": "penguinmusic",
+      "genre": "Work",
+      "filePath": "assets/music/work/5.mp3"
+    },
+    {
+      "title": "Modular Ambient 06 - Endless Sequence",
+      "composer": "Zen_Man",
+      "genre": "Work",
+      "filePath": "assets/music/work/6.mp3"
+    },
+    {
+      "title": "Ambient Corporate Presentation (Neon Lights Everywhere)",
+      "composer": "AlexGrohl",
+      "genre": "Work",
+      "filePath": "assets/music/work/7.mp3"
+    },
+    {
+      "title": "Athmospheric Ambient",
+      "composer": "MichaeL-X_Studio",
+      "genre": "Work",
+      "filePath": "assets/music/work/8.mp3"
+    },
+    {
+      "title": "Minimal Tech Ambient (Main)",
+      "composer": "Good_B_Music",
+      "genre": "Work",
+      "filePath": "assets/music/work/9.mp3"
+    },
+    {
+      "title": "Background Atmospheric Ambient",
+      "composer": "lvymusic",
+      "genre": "Work",
+      "filePath": "assets/music/work/10.mp3"
+    },
+    {
+      "title": "Relaxed Vlog (Night Street)",
+      "composer": "Ashot-Danielyan-Composer",
+      "genre": "Work",
+      "filePath": "assets/music/work/11.mp3"
+    },
+    {
+      "title": "Lofi Chill",
+      "composer": "FASSounds",
+      "genre": "Work",
+      "filePath": "assets/music/work/12.mp3"
+    },
+    {
+      "title": "Weeknds",
+      "composer": "DayFox",
+      "genre": "Work",
+      "filePath": "assets/music/work/13.mp3"
+    },
+    {
+      "title": "LoFi Chill Hip-Hop",
+      "composer": "The_Mountain",
+      "genre": "Work",
+      "filePath": "assets/music/work/14.mp3"
+    },
+    {
+      "title": "Chilled Hop (Calm Chill Background)",
+      "composer": "RoyaltyFreeMusic",
+      "genre": "Work",
+      "filePath": "assets/music/work/15.mp3"
+    },
+    {
+      "title": "Aesthetics",
+      "composer": "SoulProdMusic",
+      "genre": "Work",
+      "filePath": "assets/music/work/16.mp3"
+    },
+    {
+      "title": "Lofi Summer Background",
+      "composer": "raspberrymusic",
+      "genre": "Work",
+      "filePath": "assets/music/work/17.mp3"
+    },
+    {
+      "title": "Retro Hip Hop",
+      "composer": "RoyaltyFreeMusic",
+      "genre": "Work",
+      "filePath": "assets/music/work/18.mp3"
+    },
+    {
+      "title": "Casset Gold",
+      "composer": "ColorfulSound",
+      "genre": "Work",
+      "filePath": "assets/music/work/19.mp3"
+    },
+    {
+      "title": "Lofi Beat",
+      "composer": "FASSounds",
+      "genre": "Work",
+      "filePath": "assets/music/work/20.mp3"
+    },
+    {
+      "title": "Space",
+      "composer": "The_Mountain",
       "genre": "Sleep",
-      "path": "assets/music/7.mp3"
+      "filePath": "assets/music/sleep/1.mp3"
+    }, 
+    {
+      "title": "Oceanscape",
+      "composer": "SergePavkinMusic",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/2.mp3"
     },
     {
-      "title": "Study and Relax",
-      "composer": "Kevin MacLeod",
+      "title": "Space Atmospheric Background",
+      "composer": "lvymusic",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/3.mp3"
+    }, 
+    {
+      "title": "Into the Unknown Ambient Soundscape",
+      "composer": "P4LASH",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/4.mp3"
+    }, 
+    {
+      "title": "The Documentary",
+      "composer": "The_Mountain",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/5.mp3"
+    }, 
+    {
+      "title": "Healing Sounds",
+      "composer": "RelaxingTime",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/6.mp3"
+    }, 
+    {
+      "title": "Rain in the paradise forest yoga zen relaxation positive sleep music",
+      "composer": "AlanFrijns",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/7.mp3"
+    }, 
+    {
+      "title": "A Walk with God1111",
+      "composer": "IamThatIam888",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/8.mp3"
+    }, 
+    {
+      "title": "Ambient Space Dream Meditation Background Music",
+      "composer": "Music_Unlimited",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/9.mp3"
+    },
+    {
+      "title": "Zen Spiritual Yoga Massage Meditation Spa Relax Ambient Music",
+      "composer": "REDproductions",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/10.mp3"
+    },
+    {
+      "title": "Fall ASLEEP like a baby - Relax Music @BluBon RelaXon",
+      "composer": "BluBonRelaXon",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/11.mp3"
+    }, 
+    {
+      "title": "Another Walk with God",
+      "composer": "IamThatIam888",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/12.mp3"
+    }, 
+    {
+      "title": "Between Sky And Water",
+      "composer": "SPmusic",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/13.mp3"
+    }, 
+    {
+      "title": "Freezing Night",
+      "composer": "John_Kensy_Music",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/14.mp3"
+    }, 
+    {
+      "title": "The Reflection of My Soul",
+      "composer": "JCI21",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/15.mp3"
+    }, 
+    {
+      "title": "Deep In The Ocean",
+      "composer": "SergePavkinMusic",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/16.mp3"
+    }, 
+    {
+      "title": "Perplexity",
+      "composer": "Magnetic_Trailer",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/17.mp3"
+    }, 
+    {
+      "title": "Ambient Spring Forest",
+      "composer": "Lesfm",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/18.mp3"
+    }, 
+    {
+      "title": "Milky Way",
+      "composer": "monowaymusic",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/19.mp3"
+    }, 
+    {
+      "title": "tranquilness - Ambient Healing Music (meditation, yoga, zen)",
+      "composer": "HarumachiMusic",
+      "genre": "Sleep",
+      "filePath": "assets/music/sleep/20.mp3"
+    },
+    {
+      "title": "Emotional Thoughtful Piano (Thinking In Silence)",
+      "composer": "Ashot-Danielyan-Composer",
       "genre": "Read",
-      "path": "assets/music/14.mp3"
+      "filePath": "assets/music/read/1.mp3"
     },
     {
-      "title": "Radiant Gift",
-      "composer": "Nolan Čapek",
+      "title": "Acoustic Motivation",
+      "composer": "Coma-Media",
+      "genre": "Read",
+      "filePath": "assets/music/read/2.mp3"
+    },
+    {
+      "title": "Reflected Light",
+      "composer": "SergePavkinMusic",
+      "genre": "Read",
+      "filePath": "assets/music/read/3.mp3"
+    },
+    {
+      "title": "Morning Garden - Acoustic Chill",
+      "composer": "Olexy",
+      "genre": "Read",
+      "filePath": "assets/music/read/4.mp3"
+    },
+    {
+      "title": "Cinematic Documentary",
+      "composer": "Lexin_Music",
+      "genre": "Read",
+      "filePath": "assets/music/read/5.mp3"
+    },
+    {
+      "title": "Imish",
+      "composer": "THE4MHZ",
+      "genre": "Read",
+      "filePath": "assets/music/read/6.mp3"
+    },
+    {
+      "title": "Beautiful Style Ambient",
+      "composer": "Coma-Media",
+      "genre": "Read",
+      "filePath": "assets/music/read/7.mp3"
+    },
+    {
+      "title": "Piano Ambience Relax",
+      "composer": "Coma-Media",
+      "genre": "Read",
+      "filePath": "assets/music/read/8.mp3"
+    },
+    {
+      "title": "Atmospheric",
+      "composer": "penguinmusic",
+      "genre": "Read",
+      "filePath": "assets/music/read/9.mp3"
+    },
+    {
+      "title": "Ambient Inspiring Soundscape",
+      "composer": "Abydos_Music",
+      "genre": "Read",
+      "filePath": "assets/music/read/10.mp3"
+    },
+    {
+      "title": "Dreamy Meadow",
+      "composer": "LofCosmos",
+      "genre": "Read",
+      "filePath": "assets/music/read/11.mp3"
+    },
+    {
+      "title": "Lofi Study",
+      "composer": "FASSounds",
+      "genre": "Read",
+      "filePath": "assets/music/read/12.mp3"
+    },
+    {
+      "title": "Vintage Memories",
+      "composer": "LofCosmos",
+      "genre": "Read",
+      "filePath": "assets/music/read/13.mp3"
+    },
+    {
+      "title": "Lo-Fi Summer Relax HipHop",
+      "composer": "Noobehouse",
+      "genre": "Read",
+      "filePath": "assets/music/read/14.mp3"
+    },
+    {
+      "title": "Lo-Fi Chillhop Beat Background Music",
+      "composer": "Music_Unlimited",
+      "genre": "Read",
+      "filePath": "assets/music/read/15.mp3"
+    },
+    {
+      "title": "Chillhop Beat Thousand Miles",
+      "composer": "Music_Unlimited",
+      "genre": "Read",
+      "filePath": "assets/music/read/16.mp3"
+    },
+    {
+      "title": "Desert Island",
+      "composer": "SoulProdMusic",
+      "genre": "Read",
+      "filePath": "assets/music/read/17.mp3"
+    },
+    {
+      "title": "Fleeting Memory",
+      "composer": "SergePavkinMusic",
+      "genre": "Read",
+      "filePath": "assets/music/read/18.mp3"
+    },
+    {
+      "title": "Spectacular Sunset",
+      "composer": "SergePavkinMusic",
+      "genre": "Read",
+      "filePath": "assets/music/read/19.mp3"
+    },
+    {
+      "title": "Close / Study Relax ChillHop / Calm Study LoFi",
+      "composer": "SoulProdMusic",
+      "genre": "Read",
+      "filePath": "assets/music/read/20.mp3"
+    },
+    {
+      "title": "Stomping Rock (Four Shots)",
+      "composer": "AlexGrohl",
       "genre": "Exercise",
-      "path": "assets/23.mp3"
+      "filePath": "assets/music/exercise/1.mp3"
+    },
+    {
+      "title": "Guitar Electro Sport Trailer",
+      "composer": "Gvidon",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/2.mp3"
+    },
+    {
+      "title": "Trailer Sport Stylish",
+      "composer": "Anton_Vlasovk",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/3.mp3"
+    },
+    {
+      "title": "Powerful Energetic Sport Rock Trailer",
+      "composer": "QubeSounds",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/4.mp3"
+    },
+    {
+      "title": "Rock It",
+      "composer": "Coma-Media",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/5.mp3"
+    },
+    {
+      "title": "Powerful Stylish Stomp Rock (Lets Go)",
+      "composer": "MarkJuly",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/6.mp3"
+    },
+    {
+      "title": "Trailer Sport Action",
+      "composer": "Anton_Vlasov",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/7.mp3"
+    },{
+      "title": "Action Urban Trap",
+      "composer": "Playsound",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/8.mp3"
+    },
+    {
+      "title": "Powerful Gym Rock",
+      "composer": "QubeSounds",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/9.mp3"
+    },
+    {
+      "title": "Stomp",
+      "composer": "Amaksi",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/10.mp3"
+    },
+    {
+      "title": "Melodic Techno #03 Extended Version - Moogify",
+      "composer": "Zen_Man",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/11.mp3"
+    },
+    {
+      "title": "Entropy",
+      "composer": "Evgeny_Bardyuzha",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/12.mp3"
+    },
+    {
+      "title": "Kradgnikcuf - Iileminatium",
+      "composer": "BLACKBOX",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/13.mp3"
+    },
+    {
+      "title": "Dragonfly",
+      "composer": "Evgeny_Bardyuzha",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/14.mp3"
+    },
+    {
+      "title": "KradGnikcuf - Redbull",
+      "composer": "BLACKBOX",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/15.mp3"
+    },
+    {
+      "title": "Berlin Techno",
+      "composer": "Evgeny_Bardyuzha",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/16.mp3"
+    },
+    {
+      "title": "Mickey-Reflection(Original mix)Dub TECHNO 2021",
+      "composer": "Mickey579",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/17.mp3"
+    },
+    {
+      "title": "Dark Dub Techno - Somewhere We Got Lost | No Copyright Music",
+      "composer": "Saturn-3-Music",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/18.mp3"
+    },
+    {
+      "title": "Dance Ambient 10",
+      "composer": "LCMsounds",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/19.mp3"
+    },
+    {
+      "title": "Mike Gora - In The Shadows",
+      "composer": "MGYK",
+      "genre": "Exercise",
+      "filePath": "assets/music/exercise/20.mp3"
     }
+    
   ]
 }

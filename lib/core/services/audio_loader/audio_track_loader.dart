@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:chillzone/features/home/models/audio_track.dart';
+import 'package:chillzone/features/home/models/audio/audio_track.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 class AudioTrackLoader {
@@ -19,7 +19,7 @@ class AudioTrackLoader {
     }
   }
 
-  static Future<AudioTrackLoader> loadFromAsset(String path) async {
+  static Future<AudioTrackLoader> loadFromAssets(String path) async {
     try {
       String jsonString = await rootBundle.loadString(path);
       Map<String, dynamic> jsonData = json.decode(jsonString);

@@ -1,4 +1,4 @@
-import 'package:chillzone/features/home/models/audio_track.dart';
+import 'package:chillzone/features/home/models/audio/audio_track.dart';
 import 'package:flutter/material.dart';
 
 class GenreIcon extends StatelessWidget {

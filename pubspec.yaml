@@ -29,28 +29,11 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  dio: any
   flutter:
     sdk: flutter
-  go_router: any
   flutter_svg: any
-  # audioplayers: ^5.1.0
-  # audioplayers_webos:
-  #   git:
-  #     url: git@github.com:webos-hackathon/flutter-webos-sdk.git
-  #     path: flutter-webos-plugins/packages/audioplayers
-  #     ref: main
-  # path_provider: ^2.0.1
-  # path_provider_webos:
-  #   git:
-  #     url: git@github.com:webos-hackathon/flutter-webos-sdk.git
-  #     path: flutter-webos-plugins/packages/path_provider_webos
-  #     ref: main
-  # shared_preferences: ^2.2.0
-  # shared_preferences_webos:
-  #   git:
-  #     url: git@github.com:webos-hackathon/flutter-webos-sdk.git
-  #     path: flutter-webos-plugins/packages/shared_preferences
-  #     ref: main
+  provider: any
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
@@ -69,6 +52,7 @@ flutter:
     - assets/images/icons/
     - assets/images/background/
     - assets/json/
+    - .env
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see

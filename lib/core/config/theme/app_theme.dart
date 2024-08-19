@@ -5,7 +5,7 @@ class AppTheme {
   final bool isDark;
 
   AppTheme({
-    this.colorSchemeSeed = const Color(0XFF7354EF),
+    this.colorSchemeSeed = Colors.white70,
     this.isDark = true,
   });
 
@@ -20,18 +20,18 @@ class AppTheme {
           ),
         )
       : ThemeData.light().copyWith(
-          scaffoldBackgroundColor: Colors.white,
-          appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.white,
-            elevation: 0,
-          ),
-          cardColor: Colors.white,
-          canvasColor: Colors.white,
-          cardTheme: const CardTheme(elevation: 0, color: Colors.white),
+          // scaffoldBackgroundColor: Colors.white,
+          // appBarTheme: const AppBarTheme(
+          //   backgroundColor: Colors.white,
+          //   elevation: 0,
+          // ),
+          // cardColor: Colors.white,
+          // canvasColor: Colors.white,
+          // cardTheme: const CardTheme(elevation: 0, color: Colors.white),
           colorScheme: ColorScheme.fromSeed(
             primary: colorSchemeSeed,
             seedColor: colorSchemeSeed,
-            surface: Colors.white,
+            // surface: Colors.white,
           ),
         );
 

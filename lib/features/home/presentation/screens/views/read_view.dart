@@ -1,4 +1,4 @@
-import 'package:chillzone/features/home/models/audio_track.dart';
+import 'package:chillzone/features/home/models/audio/audio_track.dart';
 import 'package:chillzone/features/home/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -9,11 +9,24 @@ class ReadView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Phrase(genre: AudioGenre.read),
+            Spacer(flex: 2),
+            Expanded(
+              flex: 3,
+              child: Center(child: Phrase(genre: AudioGenre.read)),
+            ),
+            Spacer(flex: 1),
+            PlaylistTitle(genre: AudioGenre.read),
+            SizedBox(height: 8),
+            Expanded(
+              flex: 5,
+              child: AudioTracks(genre: AudioGenre.read),
+            ),
+            Spacer(flex: 1),
           ],
         ),
       ),

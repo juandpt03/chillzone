@@ -1,54 +1,55 @@
+import 'package:chillzone/features/home/presentation/providers/widgets/navigation_provider.dart';
 import 'package:chillzone/features/shared/shared.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
 
 class CustomNavigation extends StatelessWidget {
-  final StatefulNavigationShell navigationShell;
-  const CustomNavigation({super.key, required this.navigationShell});
+  const CustomNavigation({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final selectedIndex = navigationShell.currentIndex;
-
     return SizedBox(
       width: 100,
-      child: CustomNavigationRail(
-        labelType: LabelType.selected,
-        destinations: const [
-          CustomNavigationRailDestination(
-            icon: Icons.nightlight,
-            label: 'Sleep',
-          ),
-          CustomNavigationRailDestination(
-            icon: Icons.work,
-            label: 'Work',
-          ),
-          CustomNavigationRailDestination(
-            icon: Icons.book,
-            label: 'Read',
-          ),
-          CustomNavigationRailDestination(
-            icon: Icons.sports_gymnastics,
-            label: 'Exercise',
-          ),
-          CustomNavigationRailDestination(
-            icon: Icons.self_improvement,
-            label: 'Meditate',
-          ),
-          CustomNavigationRailDestination(
-            icon: Icons.track_changes,
-            label: 'Sleep Tracker',
-          ),
-          CustomNavigationRailDestination(
-            icon: Icons.settings,
-            label: 'Settings',
-          ),
-        ],
-        selectedIndex: selectedIndex,
-        onDestinationSelected: (index) {
-          navigationShell.goBranch(
-            index,
-            initialLocation: index == selectedIndex,
+      child: Consumer<NavigationProvider>(
+        builder: (context, navigation, child) {
+          return CustomNavigationRail(
+            labelType: LabelType.selected,
+            destinations: const [
+              CustomNavigationRailDestination(
+                icon: Icons.nightlight,
+                label: 'Sleep',
+              ),
+              CustomNavigationRailDestination(
+                icon: Icons.work,
+                label: 'Work',
+              ),
+              CustomNavigationRailDestination(
+                icon: Icons.book,
+                label: 'Read',
+              ),
+              CustomNavigationRailDestination(
+                icon: Icons.sports_gymnastics,
+                label: 'Exercise',
+              ),
+              CustomNavigationRailDestination(
+                icon: Icons.self_improvement,
+                label: 'Meditate',
+              ),
+              CustomNavigationRailDestination(
+                icon: Icons.track_changes,
+                label: 'Sleep Tracker',
+              ),
+              CustomNavigationRailDestination(
+                icon: Icons.settings,
+                label: 'Settings',
+              ),
+            ],
+            onDestinationSelected: (index) {
+              navigation.selectedIndex = index;
+            },
+            selectedIndex: navigation.selectedIndex,
           );
         },
       ),

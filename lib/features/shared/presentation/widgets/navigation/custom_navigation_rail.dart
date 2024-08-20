@@ -66,6 +66,7 @@ class CustomNavigationRail extends StatelessWidget {
                           : colors.onSurface.withOpacity(0.8),
                       fontWeight:
                           isSelected ? FontWeight.bold : FontWeight.normal,
+                      fontSize: size.height * 0.015,
                     ),
                   ),
               ],

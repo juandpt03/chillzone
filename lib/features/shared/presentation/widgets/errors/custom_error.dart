@@ -20,33 +20,35 @@ class CustomErrorWidget extends StatelessWidget {
           color: colors.error,
         );
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: Column(
-        children: [
-          Text(
-            'Oops!',
-            style: titleTextStyle,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            error.when(
-              network: () => 'Check your internet connection',
-              notFound: () => 'Resource not found',
-              server: () => 'Server issues, please try again later',
-              unauthorized: () => 'Access denied, please log in',
-              badRequest: () => 'Request error, please check your data',
-              local: () => 'App error, please restart and try again',
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          children: [
+            Text(
+              'Oops!',
+              style: titleTextStyle,
             ),
-            style: textStyle,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 16),
-          FilledButton(
-            onPressed: onRetry,
-            child: const Text('Try again'),
-          ),
-        ],
+            const SizedBox(height: 16),
+            Text(
+              error.when(
+                network: () => 'Check your internet connection',
+                notFound: () => 'Resource not found',
+                server: () => 'Server issues, please try again later',
+                unauthorized: () => 'Access denied, please log in',
+                badRequest: () => 'Request error, please check your data',
+                local: () => 'App error, please restart and try again',
+              ),
+              style: textStyle,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 16),
+            FilledButton(
+              onPressed: onRetry,
+              child: const Text('Try again'),
+            ),
+          ],
+        ),
       ),
     );
   }

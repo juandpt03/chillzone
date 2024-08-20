@@ -30,23 +30,17 @@ class SettingsViewState extends State<SettingsView> {
     ];
 
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(24.0),
-        child: FocusTraversalGroup(
-          policy: OrderedTraversalPolicy(),
-          child: ListView.builder(
-            itemCount: settingsOptions.length,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: const EdgeInsets.symmetric(vertical: 12.0),
-                child: SettingsOptionCard(
-                  optionName: settingsOptions[index],
-                  focusNode: index == 0 ? _firstOptionFocusNode : FocusNode(),
-                ),
-              );
-            },
-          ),
-        ),
+      body: ListView.builder(
+        itemCount: settingsOptions.length,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(vertical: 12.0),
+            child: SettingsOptionCard(
+              optionName: settingsOptions[index],
+              focusNode: index == 0 ? _firstOptionFocusNode : FocusNode(),
+            ),
+          );
+        },
       ),
     );
   }

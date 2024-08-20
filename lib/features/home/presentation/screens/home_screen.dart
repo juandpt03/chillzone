@@ -4,9 +4,10 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:chillzone/core/services/image_manager/image_manager.dart';
 import 'package:chillzone/features/home/presentation/screens/screens.dart';
-import 'package:chillzone/features/home/presentation/widgets/custom_navigation.dart';
+import 'package:chillzone/features/home/presentation/widgets/home/custom_navigation.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String routeName = '/';
   const HomeScreen({super.key});
 
   @override

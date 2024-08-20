@@ -24,23 +24,17 @@ class SleepTrackerViewState extends State<SleepTrackerView> {
     final colors = Theme.of(context).colorScheme;
 
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(24.0),
-        child: FocusTraversalGroup(
-          policy: OrderedTraversalPolicy(),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _buildDateSelector(colors),
-              const SizedBox(height: 20),
-              _buildSleepTrackingCard(colors),
-              const SizedBox(height: 20),
-              _buildStatistics(colors),
-              const SizedBox(height: 20),
-              _buildGraphPlaceholder(colors),
-            ],
-          ),
-        ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildDateSelector(colors),
+          const SizedBox(height: 20),
+          _buildSleepTrackingCard(colors),
+          const SizedBox(height: 20),
+          _buildStatistics(colors),
+          const SizedBox(height: 20),
+          _buildGraphPlaceholder(colors),
+        ],
       ),
     );
   }

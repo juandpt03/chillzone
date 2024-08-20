@@ -11,11 +11,15 @@ class Phrase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
     final textStyle = Theme.of(context).textTheme.displayMedium?.copyWith(
           fontWeight: FontWeight.bold,
+          fontSize: size.height * 0.04,
         );
 
-    final phraseTextStyle = Theme.of(context).textTheme.titleLarge?.copyWith();
+    final phraseTextStyle = Theme.of(context).textTheme.titleLarge?.copyWith(
+          fontSize: size.height * 0.025,
+        );
 
     final messageProvider = MessageProvider(
       messageRepository: ServiceLocator().get(),

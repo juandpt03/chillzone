@@ -1,5 +1,6 @@
+import 'package:chillzone/core/config/router/router.dart';
 import 'package:chillzone/core/config/theme/app_theme.dart';
-import 'package:chillzone/features/home/presentation/screens/screens.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -13,6 +14,7 @@ void main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => NavigationProvider()),
+        ChangeNotifierProvider(create: (_) => AudioProvider()),
       ],
       child: const MainApp(),
     ),
@@ -25,8 +27,19 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scrollBehavior: const MaterialScrollBehavior().copyWith(
+        dragDevices: {
+          PointerDeviceKind.touch,
+          PointerDeviceKind.mouse,
+          PointerDeviceKind.stylus,
+          PointerDeviceKind.unknown,
+          PointerDeviceKind.trackpad
+        },
+        physics: const BouncingScrollPhysics(),
+      ),
       theme: AppTheme().getAppTheme(),
-      home: const HomeScreen(),
+      initialRoute: '/',
+      onGenerateRoute: AppRouter().generateRoute,
     );
   }
 }

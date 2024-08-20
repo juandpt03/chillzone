@@ -9,28 +9,25 @@ class ExerciseView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Spacer(flex: 2),
-            Expanded(
-              flex: 3,
-              child: Center(child: Phrase(genre: AudioGenre.exercise)),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Spacer(flex: 2),
+          Expanded(
+            flex: 3,
+            child: Center(child: Phrase(genre: AudioGenre.exercise)),
+          ),
+          Spacer(flex: 1),
+          PlaylistTitle(genre: AudioGenre.exercise),
+          SizedBox(height: 8),
+          Expanded(
+            flex: 5,
+            child: AudioTracks(
+              genre: AudioGenre.exercise,
             ),
-            Spacer(flex: 1),
-            PlaylistTitle(genre: AudioGenre.exercise),
-            SizedBox(height: 8),
-            Expanded(
-              flex: 5,
-              child: AudioTracks(
-                genre: AudioGenre.exercise,
-              ),
-            ),
-            Spacer(flex: 1),
-          ],
-        ),
+          ),
+          Spacer(flex: 1),
+        ],
       ),
     );
   }

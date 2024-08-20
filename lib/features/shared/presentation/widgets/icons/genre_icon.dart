@@ -7,7 +7,8 @@ class GenreIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Icon(_getGenreIcon(genre), size: 50);
+    final Size size = MediaQuery.of(context).size;
+    return Icon(_getGenreIcon(genre), size: size.height * 0.06);
   }
 
   IconData _getGenreIcon(AudioGenre genre) {

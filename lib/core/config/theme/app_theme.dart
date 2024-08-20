@@ -13,6 +13,10 @@ class AppTheme {
       ? ThemeData.dark().copyWith(
           scaffoldBackgroundColor: Colors.transparent,
           primaryColorDark: colorSchemeSeed,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+          ),
           colorScheme: ColorScheme.fromSeed(
             primary: colorSchemeSeed,
             seedColor: colorSchemeSeed,

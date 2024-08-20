@@ -9,26 +9,23 @@ class SleepView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Spacer(flex: 2),
-            Expanded(
-              flex: 3,
-              child: Center(child: Phrase(genre: AudioGenre.sleep)),
-            ),
-            Spacer(flex: 1),
-            PlaylistTitle(genre: AudioGenre.sleep),
-            SizedBox(height: 8),
-            Expanded(
-              flex: 5,
-              child: AudioTracks(genre: AudioGenre.sleep),
-            ),
-            Spacer(flex: 1),
-          ],
-        ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Spacer(flex: 2),
+          Expanded(
+            flex: 3,
+            child: Center(child: Phrase(genre: AudioGenre.sleep)),
+          ),
+          Spacer(flex: 1),
+          PlaylistTitle(genre: AudioGenre.sleep),
+          SizedBox(height: 8),
+          Expanded(
+            flex: 5,
+            child: AudioTracks(genre: AudioGenre.sleep),
+          ),
+          Spacer(flex: 1),
+        ],
       ),
     );
   }

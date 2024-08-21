@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:chillzone/core/core.dart';
 import 'package:chillzone/features/home/repositories/open_ai_repository.dart';
 import 'package:chillzone/features/shared/presentation/widgets/transitions/transitions_manager.dart';
@@ -17,5 +18,6 @@ class DI {
     ));
     serviceLocator.register(OpenAiRepository(dio: serviceLocator.get<Dio>()));
     serviceLocator.register(TransitionManager());
+    serviceLocator.register(AudioPlayer());
   }
 }

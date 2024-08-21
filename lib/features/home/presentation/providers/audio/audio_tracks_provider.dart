@@ -10,6 +10,10 @@ class AudioProvider extends ChangeNotifier {
   AudioState _state = const AudioState.loading();
 
   AudioState get state => _state;
+  set state(AudioState state) {
+    _state = state;
+    notifyListeners();
+  }
 
   AudioProvider({
     this.genre = AudioGenre.sleep,
@@ -19,29 +23,40 @@ class AudioProvider extends ChangeNotifier {
 
   Future<void> loadAudioTracks() async {
     try {
-      _state = const AudioState.loading();
-      notifyListeners();
+      state = const AudioState.loading();
 
       final audioTrackLoader =
           await AudioTrackLoader.loadFromAssets('assets/json/music.json');
 
       final tracks = audioTrackLoader.getTracksByGenre(genre);
 
-      _state = AudioState.success(tracks: tracks);
-      notifyListeners();
+      state = AudioState.success(tracks: tracks, currentTrack: tracks.first);
     } catch (e) {
-      _state = const AudioState.error(error: HttpRequestFailure.local);
-      notifyListeners();
+      state = const AudioState.error(error: HttpRequestFailure.local);
     }
   }
 
   void playTrack(AudioTrack track) {
-    _state = state.map(
-      loading: (state) => state,
-      success: (state) => state.copyWith(currentTrack: track),
-      error: (state) => state,
-    );
+    state = state.success.copyWith(currentTrack: track);
     notifyListeners();
+  }
+
+  void playNextTrack() {
+    final successState = state.success;
+    final currentIndex = successState.tracks.indexOf(successState.currentTrack);
+    if (currentIndex < successState.tracks.length - 1) {
+      final nextTrack = successState.tracks[currentIndex + 1];
+      playTrack(nextTrack);
+    }
+  }
+
+  void playPreviousTrack() {
+    final successState = state.success;
+    final currentIndex = successState.tracks.indexOf(successState.currentTrack);
+    if (currentIndex > 0) {
+      final previousTrack = successState.tracks[currentIndex - 1];
+      playTrack(previousTrack);
+    }
   }
 
   void updateGenre(AudioGenre genre) {

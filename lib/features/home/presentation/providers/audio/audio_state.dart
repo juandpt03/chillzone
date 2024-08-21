@@ -7,7 +7,7 @@ sealed class AudioState {
   const factory AudioState.loading() = Loading;
   const factory AudioState.success({
     List<AudioTrack> tracks,
-    AudioTrack? currentTrack,
+    required AudioTrack currentTrack,
   }) = Success;
   const factory AudioState.error({required HttpRequestFailure error}) = Error;
 
@@ -34,11 +34,11 @@ class Loading extends AudioState {
 
 class Success extends AudioState {
   final List<AudioTrack> tracks;
-  final AudioTrack? currentTrack;
+  final AudioTrack currentTrack;
 
   const Success({
     this.tracks = const [],
-    this.currentTrack,
+    required this.currentTrack,
   });
 
   Success copyWith({
@@ -56,4 +56,12 @@ class Error extends AudioState {
   final HttpRequestFailure error;
 
   const Error({required this.error});
+}
+
+extension AudioStateX on AudioState {
+  Success get success => map(
+        loading: (state) => Success(currentTrack: AudioTrack.empty()),
+        success: (state) => state,
+        error: (state) => Success(currentTrack: AudioTrack.empty()),
+      );
 }

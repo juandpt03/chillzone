@@ -1,3 +1,4 @@
+export 'package:chillzone/core/config/helpers/string_format.dart';
 export 'package:chillzone/core/config/theme/app_theme.dart';
 export 'package:chillzone/core/config/constants/enviroment.dart';
 export 'package:chillzone/core/services/service_locator/di.dart';

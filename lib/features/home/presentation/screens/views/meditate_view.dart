@@ -17,16 +17,15 @@ class MeditateView extends StatelessWidget {
             flex: 3,
             child: Center(child: Phrase(genre: AudioGenre.meditate)),
           ),
-          Spacer(flex: 1),
-          PlaylistTitle(genre: AudioGenre.meditate),
+          Spacer(flex: 5),
+          PlaylistTitle(genre: AudioGenre.work),
           SizedBox(height: 8),
           Expanded(
             flex: 5,
-            child: AudioTracks(
-              genre: AudioGenre.meditate,
-            ),
+            child: AudioTracks(genre: AudioGenre.meditate),
           ),
-          Spacer(flex: 1),
+          Center(child: Controls()),
+          ProgressBar()
         ],
       ),
     );

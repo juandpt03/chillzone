@@ -19,6 +19,13 @@ class AudioTrack {
       filePath: json['filePath'],
     );
   }
+
+  factory AudioTrack.empty() => AudioTrack(
+        title: '',
+        composer: '',
+        genre: AudioGenre.sleep,
+        filePath: '',
+      );
 }
 
 enum AudioGenre {

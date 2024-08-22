@@ -24,7 +24,7 @@ class MessageProvider extends ChangeNotifier {
     required this.messageRepository,
     this.genre = AudioGenre.sleep,
   }) {
-    // getMessages();
+    getMessages();
   }
 
   Future<void> getMessages() async {

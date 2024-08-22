@@ -1,6 +1,6 @@
 import 'package:chillzone/features/home/models/audio/audio_track.dart';
 import 'package:chillzone/features/home/models/models.dart';
-import 'package:chillzone/features/home/presentation/providers/images/images_state.dart';
+import 'package:chillzone/features/home/presentation/providers/images/dalle/images_state.dart';
 import 'package:chillzone/features/home/repositories/open_ai_repository.dart';
 import 'package:flutter/foundation.dart';
 

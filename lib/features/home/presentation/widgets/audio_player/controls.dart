@@ -11,8 +11,9 @@ class Controls extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     final state = context.watch<AudioProvider>().state;
-    final audioNotifier = context.watch<AudioProvider>();
+    final audioNotifier = context.read<AudioProvider>();
     final audioPlayer = context.watch<AudioPlayerNotifier>();
+    final pixabayImagesNotifier = context.read<PixabayImagesNotifier>();
 
     return state.map(
       loading: (_) => const CustomLoading(),
@@ -28,6 +29,7 @@ class Controls extends StatelessWidget {
               onPressed: currentIndex > 0
                   ? () {
                       audioNotifier.playPreviousTrack();
+                      pixabayImagesNotifier.imageUrl(currentIndex - 1);
                     }
                   : null,
               icon: Icon(Icons.skip_previous_rounded, size: size.height * 0.05),
@@ -55,6 +57,7 @@ class Controls extends StatelessWidget {
               onPressed: currentIndex < tracks.length - 1
                   ? () {
                       audioNotifier.playNextTrack();
+                      pixabayImagesNotifier.imageUrl(currentIndex + 1);
                     }
                   : null,
               icon: Icon(

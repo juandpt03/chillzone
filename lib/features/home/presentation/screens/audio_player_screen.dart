@@ -1,5 +1,8 @@
+import 'package:chillzone/features/home/presentation/providers/providers.dart';
 import 'package:chillzone/features/home/presentation/widgets/widgets.dart';
+import 'package:chillzone/features/shared/shared.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class AudioPlayerScreen extends StatelessWidget {
   static const String routeName = '/audio_player_screen';
@@ -10,6 +13,7 @@ class AudioPlayerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Stack(
+        fit: StackFit.expand,
         children: [
           _Background(),
           _LeadingButton(),
@@ -57,20 +61,29 @@ class _Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      height: double.infinity,
-      width: double.infinity,
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color(0xFF144771),
-            Color(0xFF071A2C),
-          ],
+    final pixabayImageState = context.watch<PixabayImagesNotifier>().state;
+    final colors = Theme.of(context).colorScheme;
+    return Stack(
+      fit: StackFit.expand,
+      alignment: Alignment.center,
+      children: [
+        pixabayImageState.map(
+          loading: (_) => const CustomLoading(),
+          success: (state) => Image.network(
+            state.imageUrl,
+            fit: BoxFit.cover,
+          ),
+          error: (state) => CustomErrorWidget(
+            error: state.error,
+            onRetry: () async => await context
+                .read<PixabayImagesNotifier>()
+                .getImages(context.read<AudioProvider>().genre),
+          ),
         ),
-      ),
+        Container(
+          color: colors.scrim.withOpacity(0.7),
+        ),
+      ],
     );
   }
 }

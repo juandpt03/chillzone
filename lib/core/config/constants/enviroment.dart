@@ -10,4 +10,5 @@ class Environment {
   factory Environment() => _instance;
 
   final apikey = _envLoader.get('API_KEY');
+  final pixabayApiKey = _envLoader.get('PIXABAY_API_KEY');
 }

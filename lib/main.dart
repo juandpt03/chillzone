@@ -3,7 +3,6 @@ import 'package:chillzone/core/core.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'features/home/presentation/providers/providers.dart';
 
 void main() async {
@@ -19,6 +18,11 @@ void main() async {
           create: (context) => AudioPlayerNotifier(
             audioPlayer: ServiceLocator().get(),
             audioProvider: context.read<AudioProvider>(),
+          ),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => PixabayImagesNotifier(
+            repository: ServiceLocator().get(),
           ),
         ),
       ],

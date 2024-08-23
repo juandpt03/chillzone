@@ -6,3 +6,4 @@ export 'package:chillzone/features/home/presentation/providers/widgets/navigatio
 export 'package:chillzone/features/home/presentation/providers/images/pixabay/pixabay_images_notifier.dart';
 export 'package:chillzone/features/home/presentation/providers/images/pixabay/pixabay_images_state.dart';
 export 'package:chillzone/features/home/presentation/providers/images/dalle/images_state.dart';
+export 'package:chillzone/features/home/presentation/providers/sleep_tracker/sleep_tracker_provider.dart';

@@ -14,10 +14,10 @@ class WorkView extends StatelessWidget {
         children: [
           Spacer(flex: 2),
           Expanded(
-            flex: 3,
+            flex: 4,
             child: Center(child: Phrase(genre: AudioGenre.work)),
           ),
-          Spacer(flex: 5),
+          Spacer(flex: 3),
           PlaylistTitle(genre: AudioGenre.work),
           SizedBox(height: 8),
           Expanded(

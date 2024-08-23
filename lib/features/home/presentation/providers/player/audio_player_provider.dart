@@ -6,12 +6,16 @@ import 'package:flutter/material.dart';
 class AudioPlayerNotifier extends ChangeNotifier {
   final AudioPlayer audioPlayer;
   final AudioProvider audioProvider;
+  final PixabayImagesNotifier pixabayImagesNotifier;
   Duration _duration = Duration.zero;
   Duration _position = Duration.zero;
   PlayerState _playerState = PlayerState.stopped;
 
-  AudioPlayerNotifier(
-      {required this.audioPlayer, required this.audioProvider}) {
+  AudioPlayerNotifier({
+    required this.audioPlayer,
+    required this.audioProvider,
+    required this.pixabayImagesNotifier,
+  }) {
     _setupListeners();
   }
 
@@ -40,6 +44,7 @@ class AudioPlayerNotifier extends ChangeNotifier {
     _listenToPositionChanges();
     _listenToPlayerStateChanges();
     _listenToAudioProvider();
+    _listenToCompletion();
   }
 
   void _listenToDurationChanges() {
@@ -71,8 +76,24 @@ class AudioPlayerNotifier extends ChangeNotifier {
         loading: (state) => null,
       );
 
-      if (currentTrack != null) {
+      final currentIndex = audioProvider.state.map(
+        success: (state) => state.tracks.indexOf(state.currentTrack),
+        error: (state) => null,
+        loading: (state) => null,
+      );
+
+      if (currentTrack != null && currentIndex != null) {
         play(currentTrack.filePath);
+
+        pixabayImagesNotifier.imageUrl(currentIndex);
+      }
+    });
+  }
+
+  void _listenToCompletion() {
+    audioPlayer.onPlayerStateChanged.listen((event) {
+      if (event == PlayerState.completed) {
+        audioProvider.playNextTrack();
       }
     });
   }

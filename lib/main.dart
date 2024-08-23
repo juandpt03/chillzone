@@ -15,14 +15,15 @@ void main() async {
         ChangeNotifierProvider(create: (_) => NavigationProvider()),
         ChangeNotifierProvider(create: (_) => AudioProvider()),
         ChangeNotifierProvider(
-          create: (context) => AudioPlayerNotifier(
-            audioPlayer: ServiceLocator().get(),
-            audioProvider: context.read<AudioProvider>(),
+          create: (context) => PixabayImagesNotifier(
+            repository: ServiceLocator().get(),
           ),
         ),
         ChangeNotifierProvider(
-          create: (context) => PixabayImagesNotifier(
-            repository: ServiceLocator().get(),
+          create: (context) => AudioPlayerNotifier(
+            audioPlayer: ServiceLocator().get(),
+            audioProvider: context.read<AudioProvider>(),
+            pixabayImagesNotifier: context.read<PixabayImagesNotifier>(),
           ),
         ),
       ],

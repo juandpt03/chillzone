@@ -29,7 +29,6 @@ class Controls extends StatelessWidget {
               onPressed: currentIndex > 0
                   ? () {
                       audioNotifier.playPreviousTrack();
-                      pixabayImagesNotifier.imageUrl(currentIndex - 1);
                     }
                   : null,
               icon: Icon(Icons.skip_previous_rounded, size: size.height * 0.05),

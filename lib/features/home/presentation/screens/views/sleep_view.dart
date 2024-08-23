@@ -14,10 +14,10 @@ class SleepView extends StatelessWidget {
         children: [
           Spacer(flex: 2),
           Expanded(
-            flex: 3,
+            flex: 4,
             child: Center(child: Phrase(genre: AudioGenre.sleep)),
           ),
-          Spacer(flex: 5),
+          Spacer(flex: 3),
           PlaylistTitle(genre: AudioGenre.sleep),
           SizedBox(height: 8),
           Expanded(

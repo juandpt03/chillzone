@@ -66,9 +66,9 @@ class _AudioTracksState extends State<AudioTracks> {
               ),
               error: (state) => CustomErrorWidget(
                 error: state.error,
-                onRetry: () async => await context
+                onRetry: () async => context
                     .read<PixabayImagesNotifier>()
-                    .getImages(widget.genre),
+                    .generateRandomImages(),
               ),
             );
           },
@@ -99,8 +99,8 @@ class AudioTrackCard extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(12.0),
-          child: CachedNetworkImage(
-            imageUrl: imageUrl,
+          child: Image.network(
+            imageUrl,
             fit: BoxFit.cover,
           ),
         ),

@@ -75,9 +75,8 @@ class _Background extends StatelessWidget {
           ),
           error: (state) => CustomErrorWidget(
             error: state.error,
-            onRetry: () async => await context
-                .read<PixabayImagesNotifier>()
-                .getImages(context.read<AudioProvider>().genre),
+            onRetry: () =>
+                context.read<PixabayImagesNotifier>().generateRandomImages(),
           ),
         ),
         Container(

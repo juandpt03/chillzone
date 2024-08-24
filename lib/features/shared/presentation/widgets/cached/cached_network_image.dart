@@ -85,7 +85,7 @@ class CachedNetworkImageState extends State<CachedNetworkImage> {
               Container(
                 width: widget.width,
                 height: widget.height,
-                color: colorScheme.surfaceBright,
+                color: colorScheme.surfaceVariant,
               );
         } else if (snapshot.hasError) {
           return widget.errorWidget ??

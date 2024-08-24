@@ -14,7 +14,7 @@ void main() async {
       providers: [
         ChangeNotifierProvider(create: (_) => NavigationProvider()),
         ChangeNotifierProvider(create: (_) => AudioProvider()),
-        ChangeNotifierProvider(create: (_) => SleepTrackerProvider()),
+        // ChangeNotifierProvider(create: (_) => SleepTrackerProvider()),
         ChangeNotifierProvider(
           create: (context) => PixabayImagesNotifier(
             repository: ServiceLocator().get(),

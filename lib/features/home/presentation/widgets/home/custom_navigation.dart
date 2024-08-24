@@ -37,10 +37,10 @@ class CustomNavigation extends StatelessWidget {
                 icon: Icons.self_improvement,
                 label: 'Meditate',
               ),
-              CustomNavigationRailDestination(
-                icon: Icons.track_changes,
-                label: 'Sleep Tracker',
-              ),
+              // CustomNavigationRailDestination(
+              //   icon: Icons.track_changes,
+              //   label: 'Sleep Tracker',
+              // ),
             ],
             onDestinationSelected: (index) {
               navigation.selectedIndex = index;

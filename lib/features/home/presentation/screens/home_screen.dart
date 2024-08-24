@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
       const ReadView(),
       const ExerciseView(),
       const MeditateView(),
-      const SleepTrackerView(),
+      // const SleepTrackerView(),
     ];
 
     final ImageManager imageManager = ImageManager();

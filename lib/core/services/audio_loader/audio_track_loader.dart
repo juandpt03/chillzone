@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:chillzone/features/home/models/audio/audio_track.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'dart:math';
 
 class AudioTrackLoader {
   final List<AudioTrack> audioTrackList;
@@ -30,6 +31,8 @@ class AudioTrackLoader {
   }
 
   List<AudioTrack> getTracksByGenre(AudioGenre genre) {
-    return audioTrackList.where((track) => track.genre == genre).toList();
+    var random = Random();
+    var shuffledTracks = audioTrackList.toList()..shuffle(random);
+    return shuffledTracks.where((track) => track.genre == genre).toList();
   }
 }
